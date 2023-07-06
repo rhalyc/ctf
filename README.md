@@ -1,7 +1,7 @@
 # CTF
 
-Hi! If you manage to get congrats, you are soo close!
-Note that you don't need modify master (and it's not allowed you will get disqualified...), so any change you do, do it in a branch.
+Hi! Congrats, you are soo close!
+Note that you don't need modify master (and it's not allowed, you will get disqualified if you do so...), so any change you do, do it in a new branch you create.
 
 Whenever you finish your job, clean the repo removing the branch you created (and any other log that you might have created):
 

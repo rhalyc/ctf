@@ -1,6 +1,5 @@
 name: AWS example workflow
 on:
-  push:
   pull_request:
 permissions:
       id-token: write   

